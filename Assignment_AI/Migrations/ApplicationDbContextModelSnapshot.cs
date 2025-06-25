@@ -56,7 +56,7 @@ namespace Assignment_AI.Migrations
                         {
                             Id = 1,
                             Amount = 5000m,
-                            Balance = 0m,
+                            Balance = 5000m,
                             Date = new DateTime(2024, 2, 17, 0, 0, 0, 0, DateTimeKind.Utc),
                             Description = "Initial Office Credit",
                             Type = 0
@@ -65,7 +65,7 @@ namespace Assignment_AI.Migrations
                         {
                             Id = 2,
                             Amount = 500m,
-                            Balance = 0m,
+                            Balance = 4500m,
                             Date = new DateTime(2024, 2, 18, 0, 0, 0, 0, DateTimeKind.Utc),
                             Description = "Snacks Party",
                             Type = 1
@@ -74,7 +74,7 @@ namespace Assignment_AI.Migrations
                         {
                             Id = 3,
                             Amount = 285m,
-                            Balance = 0m,
+                            Balance = 4215m,
                             Date = new DateTime(2024, 2, 18, 0, 0, 0, 0, DateTimeKind.Utc),
                             Description = "Printing Sheets",
                             Type = 1
@@ -83,7 +83,7 @@ namespace Assignment_AI.Migrations
                         {
                             Id = 4,
                             Amount = 3000m,
-                            Balance = 0m,
+                            Balance = 1215m,
                             Date = new DateTime(2024, 2, 20, 0, 0, 0, 0, DateTimeKind.Utc),
                             Description = "Misc. Expense",
                             Type = 1

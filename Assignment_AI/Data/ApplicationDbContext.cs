@@ -24,7 +24,8 @@ namespace Assignment_AI.Data
                     Date = DateTime.SpecifyKind(new DateTime(2024, 2, 17), DateTimeKind.Utc),
                     Description = "Initial Office Credit",
                     Amount = 5000m,
-                    Type = TransactionType.Credit
+                    Type = TransactionType.Credit,
+                    Balance = 5000m
                 },
                 new Transaction
                 {
@@ -32,7 +33,8 @@ namespace Assignment_AI.Data
                     Date = DateTime.SpecifyKind(new DateTime(2024, 2, 18), DateTimeKind.Utc),
                     Description = "Snacks Party",
                     Amount = 500m,
-                    Type = TransactionType.Debit
+                    Type = TransactionType.Debit,
+                    Balance = 4500m
                 },
                 new Transaction
                 {
@@ -40,7 +42,8 @@ namespace Assignment_AI.Data
                     Date = DateTime.SpecifyKind(new DateTime(2024, 2, 18), DateTimeKind.Utc),
                     Description = "Printing Sheets",
                     Amount = 285m,
-                    Type = TransactionType.Debit
+                    Type = TransactionType.Debit,
+                    Balance = 4215m
                 },
                 new Transaction
                 {
@@ -48,7 +51,8 @@ namespace Assignment_AI.Data
                     Date = DateTime.SpecifyKind(new DateTime(2024, 2, 20), DateTimeKind.Utc),
                     Description = "Misc. Expense",
                     Amount = 3000m,
-                    Type = TransactionType.Debit
+                    Type = TransactionType.Debit,
+                    Balance = 1215m
                 }
             );
         }

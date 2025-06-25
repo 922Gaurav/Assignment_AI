@@ -23,6 +23,7 @@ namespace Assignment_AI.Migrations
                     Date = table.Column<DateTime>(type: "timestamp with time zone", nullable: false),
                     Description = table.Column<string>(type: "character varying(200)", maxLength: 200, nullable: false),
                     Amount = table.Column<decimal>(type: "numeric", nullable: false),
+                    Balance = table.Column<decimal>(type: "numeric", nullable: false),
                     Type = table.Column<int>(type: "integer", nullable: false)
                 },
                 constraints: table =>
@@ -32,13 +33,13 @@ namespace Assignment_AI.Migrations
 
             migrationBuilder.InsertData(
                 table: "Transactions",
-                columns: new[] { "Id", "Amount", "Date", "Description", "Type", "Balance" },
+                columns: new[] { "Id", "Amount", "Balance", "Date", "Description", "Type" },
                 values: new object[,]
                 {
-                    { 1, 5000m, new DateTime(2024, 2, 17, 0, 0, 0, 0, DateTimeKind.Utc), "Initial Office Credit", 0, 5000m },
-                    { 2, 500m, new DateTime(2024, 2, 18, 0, 0, 0, 0, DateTimeKind.Utc), "Snacks Party", 1, 4500m },
-                    { 3, 285m, new DateTime(2024, 2, 18, 0, 0, 0, 0, DateTimeKind.Utc), "Printing Sheets", 1, 4215m },
-                    { 4, 3000m, new DateTime(2024, 2, 20, 0, 0, 0, 0, DateTimeKind.Utc), "Misc. Expense", 1, 1215m }
+                    { 1, 5000m, 5000m, new DateTime(2024, 2, 17, 0, 0, 0, 0, DateTimeKind.Utc), "Initial Office Credit", 0 },
+                    { 2, 500m, 4500m, new DateTime(2024, 2, 18, 0, 0, 0, 0, DateTimeKind.Utc), "Snacks Party", 1 },
+                    { 3, 285m, 4215m, new DateTime(2024, 2, 18, 0, 0, 0, 0, DateTimeKind.Utc), "Printing Sheets", 1 },
+                    { 4, 3000m, 1215m, new DateTime(2024, 2, 20, 0, 0, 0, 0, DateTimeKind.Utc), "Misc. Expense", 1 }
                 });
         }
 
